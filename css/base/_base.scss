@@ -9,7 +9,7 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fafafa;
+    background-color: $color-secondary;
     font-size: 14px;
 }
 
@@ -26,11 +26,10 @@ ul {
 
 a {
     text-decoration: none;
-    color: #3095F6;
-}
-
-a:hover {
-    text-decoration: underline;
+    color: $color-link;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .hidden {
