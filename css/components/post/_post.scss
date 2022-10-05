@@ -1,7 +1,7 @@
 .post{
     margin-bottom: 20px;
     background-color: $color-white;
-    border: 1px solid $color-border;
+    border: 1px solid $color-gray;
     border-radius: 7px;
     &:last-child{
         margin-bottom: 0;
@@ -33,7 +33,7 @@
         display: flex;
         align-items: center;
         padding: 15px;
-        border-top: 1px solid $color-search; 
+        border-top: 1px solid $color-gray--light; 
     }
     &--loader{
         padding: 15px;
@@ -43,7 +43,7 @@
     }
     &__comments-comment{
         a{
-            color: $color-text;
+            color: $color-gray--dark;
         }
     }
 }

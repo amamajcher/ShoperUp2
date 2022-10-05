@@ -9,7 +9,7 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $color-secondary;
+    background-color: $color-gray--lighter;
     font-size: 14px;
 }
 
@@ -26,7 +26,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: $color-link;
+    color: $color-secondary;
     &:hover{
         text-decoration: underline;
     }
