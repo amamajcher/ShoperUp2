@@ -2,15 +2,14 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    width: 56px;
-    height: 56px;
+    @include square(56px,56px);
     border-radius: 100%;
     overflow: hidden;
     &.has-border{
         border: 1px solid $color-gray; 
     }
     &.is-active{
-        border: 2px solid $color-primary;
+        @include border(2px, solid, $color-primary);
         img{
             border: 1px solid $color-white;
             border-radius: 100%;
