@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    @include square(56px,56px);
+    @include square(56px);
     border-radius: 100%;
     overflow: hidden;
     &.has-border{
