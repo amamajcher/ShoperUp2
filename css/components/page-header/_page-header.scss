@@ -16,7 +16,7 @@
     }
     &__search{
         display: none;
-        @include large(800px){
+        @include media(800px){
             display:block;
         }
     }
