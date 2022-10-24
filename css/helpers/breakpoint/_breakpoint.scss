@@ -1,11 +1,11 @@
-$brakpoints: (
+$breakpoints: (
     small: 0,
     tablet: 800px,
     desktop: 1280px
 );
 
-@mixin media($brakpoint){
-    @if(map-has-key($brakpoints, $brakpoint)){
+@mixin media($breakpoint){
+    @if(map-has-key($breakpoints, $breakpoint)){
         @media screen and (min-width: map-get($breakpoints, $breakpoint)){
             @content;
         }
