@@ -1,0 +1,15 @@
+$breakpoints: (
+    small: 0,
+    tablet: 800px,
+    desktop: 1280px
+);
+
+@mixin media($breakpoint){
+    @if(map-has-key($breakpoints, $breakpoint)){
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+            @content;
+        }
+    } @else{
+        @warn "Unfortunately value `#{$breakpoint}` not exist is the map";
+    }
+}
