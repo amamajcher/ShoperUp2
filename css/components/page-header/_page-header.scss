@@ -16,8 +16,8 @@
     }
     &__search{
         display: none;
-        @include media(800px){
+        @include media(tablet) {
             display:block;
-        }
+        };
     }
 }

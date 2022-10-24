@@ -422,6 +422,11 @@ input:focus {
 .page-header__search {
   display: none;
 }
+@media screen and (min-width: 800px) {
+  .page-header__search {
+    display: block;
+  }
+}
 
 .page-nav {
   display: flex;
