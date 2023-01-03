@@ -1,8 +1,12 @@
 .page-header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 10px 0;
     background-color: $color-white;
     border-bottom: 1px solid $color-gray;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 12px 0px rgba(66, 68, 90, 1);
+    position: relative;
     &__wrapper{
         display: flex;
         align-items: center;
@@ -10,8 +14,16 @@
     }
     &__logo{
         flex-shrink: 0;
+        position: relative;
         img{
             display: block; 
+        }
+        &::after{
+            content: "BETA";
+            position: absolute;
+            bottom: -55%;
+            left: 0;
+            color: #000;
         }
     }
     &__search{
@@ -20,4 +32,8 @@
             display:block;
         };
     }
+}
+.sticky{
+  position:sticky;
+  top: 0;
 }
