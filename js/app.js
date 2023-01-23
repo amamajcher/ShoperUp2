@@ -19,3 +19,26 @@ function convertStringToArrays(tablestring, separator){
     return emptytable;
 }
 console.log(convertStringToArrays(tablestring, " "));
+
+
+// Obiekt
+
+const person ={
+    name: "Adam",
+    surname: "Adamczyk",
+    age: 29,
+    favouriteMovies: ["Szklana pułapka"," Kevin sam w domu"," Mordercza opona"],
+    getFavMovies: function(){
+        return person.favouriteMovies;
+    },
+    getFullName: function(){
+        return `${person.name} ${person.surname}`;
+    },
+    sayHello: function(){
+        return `Hello my namis is ${person.getFullName()} I am ${person.age}, and my favorite movies are: ${person.getFavMovies()}`;
+    }
+};
+
+console.log(person.getFavMovies());
+console.log(person.getFullName());
+console.log(person.sayHello());
