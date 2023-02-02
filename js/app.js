@@ -52,8 +52,12 @@ const postContent = [
     }
   ];
 
-  const post = document.querySelector(".post");
+  const postWrapper = document.querySelector(".postWrapper");
+  
 postContent.map(function(element, index){
+  const post = document.createElement("div");
+  post.setAttribute("class","post");
+  postWrapper.appendChild(post);
   const postHeader = document.createElement("div");
   postHeader.setAttribute("class","post__header");
   post.appendChild(postHeader);
@@ -89,7 +93,7 @@ postContent.map(function(element, index){
   contentImg.setAttribute("src", postContent[index].post_content_img);
   postContentImg.appendChild(contentImg);
   const postComments = document.createElement("div");
-  postComments.setAttribute("class","post__comments");
+  postComments.setAttribute("class","post__comments post__details");
   postContentContainter.appendChild(postComments);
   const likes = document.createElement("p");
   postComments.appendChild(likes);
